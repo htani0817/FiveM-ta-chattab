@@ -3,7 +3,7 @@ title: ta-chattab（チャットの Tab 補完）
 date: 2026-11-13
 tags:
   - コーディング/fivem
-status: 本物の chat 画面でのテストは通過・FiveM 実機は未確認（検証サーバーには旧名の tani-chattab で導入済み）
+status: 実装済み（FiveM 実機で動作確認済み）
 aliases:
   - ta-chattab
   - tani-chattab
@@ -15,8 +15,8 @@ T キーで開くチャットで `/` コマンドを打っている途中に Tab
 
 旧名は `tani-chattab`（2026-11-13 に `ta-chattab` へ変えた）。旧名のまま入れているサーバーは、古いフォルダを消してから入れ直す。設定やデータは持っていないので、引き継ぐものは無い。
 
-> [!warning] 未確認
-> FiveM の実機ではまだ動かしていない。FXServer に同梱の chat の画面（`dist/ui.html`）をそのまま開いて確かめた（下の「テスト」）。
+> [!success] 動作確認済み
+> FiveM の実機で動作を確認した。FXServer に同梱の chat の画面（`dist/ui.html`）をそのまま開いたテストも通っている（下の「テスト」）。
 
 ## 使い方
 
@@ -68,7 +68,9 @@ node tests/tab-test.js <FXServer のフォルダ>/citizen/system_resources/chat 
 
 ヘッドレス Chromium（Playwright が入れたもの）で chat の `dist/ui.html` を開き、chat が受け取る形のまま候補・テーマ・入力欄を開くメッセージを送ってから、実際に Tab を押す。2026-11-13 に 18 件すべて通った（テーマを2回読み直しても二重に動かないこと、元のモード切り替えが残ることも含む）。
 
-## 実機で確かめること
+## 実機での確認
+
+FiveM の実機で、次の点を確かめた。
 
 - T キーで `/` から打って Tab を押すと補完されること。
 - 補完した後に Enter でそのコマンドが実行できること。
