@@ -7,15 +7,19 @@ status: 実装済み（FiveM 実機で動作確認済み）
 aliases:
   - ta-chattab
   - tani-chattab
+related:
+  - "[[FiveM-Script/README|FiveM-Script 目次]]"
 ---
 
 # ta-chattab（チャットの Tab 補完）
 
-T キーで開くチャットで `/` コマンドを打っている途中に Tab を押すと、コマンド名を補完する。目次は [[FiveM-Script/README|FiveM-Script 目次]]。
+T キーで開くチャットで `/` コマンドを打っている途中に Tab を押すと、コマンド名を補完する。
 
 旧名は `tani-chattab`（2026-11-13 に `ta-chattab` へ変えた）。旧名のまま入れているサーバーは、古いフォルダを消してから入れ直す。設定やデータは持っていないので、引き継ぐものは無い。
 
-> [!success] 動作確認済み
+> [!NOTE]
+> **動作確認済み**
+>
 > FiveM の実機で動作を確認した。FXServer に同梱の chat の画面（`dist/ui.html`）をそのまま開いたテストも通っている（下の「テスト」）。
 
 ## 使い方
